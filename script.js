@@ -54,3 +54,29 @@ function fizzBuzz(input) {
 
     return input;
 }
+
+/* Demerit Points */
+// function checkSpeed(speed) {
+//     const speedLimit = 70;
+//     const kmPerPoint = 5;
+
+//     if (speed < speedLimit + kmPerPoint) return "Ok";
+//     else {
+//         const points = Math.floor((speed - speedLimit) / kmPerPoint);
+//         if (points >= 12) return "License suspended";
+//         else return "Points " + points;
+//     }
+// }
+
+// Optimized code
+function checkSpeed(speed) {
+    const speedLimit = 70;
+    const kmPerPoint = 5;
+
+    if (speed < speedLimit + kmPerPoint) return "Ok";
+
+    const points = Math.floor((speed - speedLimit) / kmPerPoint);
+    if (points >= 12) return "License suspended";
+
+    return "Points " + points;
+}
