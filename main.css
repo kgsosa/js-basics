@@ -1,10 +1,27 @@
 body {
-    padding: 20px 20px 20px 20px;
+    padding: 20px 20px 20px 200px;
     background-color: beige;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 .border {
     border: 1px solid #000;
     background-color: gray;
     color: yellow;
+    width: 50%;
+    height: 10%;
+    border-radius: 10px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+pre {
+    font-family: Consolas;
+}
+
+h2 > a {
+    text-decoration: none;
 }
