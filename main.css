@@ -1,17 +1,8 @@
 body {
-    padding: 20px 20px 20px 200px;
+    padding: 20px 20px 20px 20px;
     background-color: beige;
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
         "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-}
-
-.border {
-    border: 1px solid #000;
-    background-color: gray;
-    color: yellow;
-    width: 50%;
-    height: 10%;
-    border-radius: 10px;
 }
 
 ul {
@@ -24,4 +15,37 @@ pre {
 
 h2 > a {
     text-decoration: none;
+}
+
+pre code {
+    display: block;
+    padding: 1rem;
+    overflow: auto;
+    background-color: #333;
+    border: 0;
+    box-shadow: 2px 4px 25px rgba(0, 0, 0, 0.15);
+}
+
+code[class*="language-"],
+pre[class*="language-"],
+pre code {
+    font-family: Menlo, Roboto Mono, Courier New, monospace;
+    font-size: 13px;
+    color: #b3b9c5;
+    direction: ltr;
+    text-align: left;
+    white-space: pre-wrap;
+    word-spacing: normal;
+    word-break: normal;
+    line-height: 1.7;
+    font-weight: 400;
+    margin: 2rem 0;
+    -moz-tab-size: 2;
+    -o-tab-size: 2;
+    tab-size: 2;
+    -webkit-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+    border-radius: 6px;
+    -webkit-font-smoothing: subpixel-antialiased;
 }
