@@ -32,26 +32,18 @@ function isLandscape(width, height) {
 /* FizzBuzz */
 // function fizzBuzz(input) {
 //     if (typeof input !== "number") return "Not a number";
-
 //     if (input % 3 === 0 && input % 5 === 0) return "FizzBuzz";
-
 //     if (input % 3 === 0) return "Fizz";
-
 //     if (input % 5 === 0) return "Buzz";
-
 //     return input;
 // }
 
 // Optimized code
 function fizzBuzz(input) {
     if (typeof input !== "number") return NaN;
-
     if (input % 3 === 0 && input % 5 === 0) return "FizzBuzz";
-
     if (input % 3 === 0) return "Fizz";
-
     if (input % 5 === 0) return "Buzz";
-
     return input;
 }
 
@@ -79,4 +71,19 @@ function checkSpeed(speed) {
     if (points >= 12) return "License suspended";
 
     return "Points " + points;
+}
+
+/* Even and Odd Numbers*/
+// function showNumbers(limit) {
+//     for (let i = 0; i <= limit; i++)
+//         if (i % 2 === 0) console.log(i, "EVEN");
+//         else console.log(i, "ODD");
+// }
+
+// Optimized code
+function showNumbers(limit) {
+    for (let i = 0; i <= limit; i++) {
+        const message = i % 2 === 0 ? "EVEN" : "ODD";
+        console.log(i, message);
+    }
 }
