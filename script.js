@@ -14,7 +14,6 @@ function max(a, b) {
     return a > b ? a : b;
 }
 
-
 /* Landscape or Portrait */
 // function isLandscape(width, height) {
 //     if (width > height) return true;
@@ -28,4 +27,30 @@ function max(a, b) {
 // Optimized code
 function isLandscape(width, height) {
     return width > height;
+}
+
+/* FizzBuzz */
+// function fizzBuzz(input) {
+//     if (typeof input !== "number") return "Not a number";
+
+//     if (input % 3 === 0 && input % 5 === 0) return "FizzBuzz";
+
+//     if (input % 3 === 0) return "Fizz";
+
+//     if (input % 5 === 0) return "Buzz";
+
+//     return input;
+// }
+
+// Optimized code
+function fizzBuzz(input) {
+    if (typeof input !== "number") return NaN;
+
+    if (input % 3 === 0 && input % 5 === 0) return "FizzBuzz";
+
+    if (input % 3 === 0) return "Fizz";
+
+    if (input % 5 === 0) return "Buzz";
+
+    return input;
 }
