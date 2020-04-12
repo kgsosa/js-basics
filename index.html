@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Basics</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <h1>JavaScript Basics</h1>
+    <div>
+        <ul>
+            <li><a href="#max">
+                    <h3>Max of Two Numbers</h3>
+                </a></li>
+            <li><a href="#landscape">
+                    <h3>Landscape or Portrait</h3>
+                </a></li>
+        </ul>
+    </div>
+    <div id="max">
+        <h1>Max of Two Numbers</h1>
+        <div class="border">
+            <pre>
+                function max(a, b) {
+                    if (a > b) return a;
+                    else return b;
+                }
+        
+                function max(a, b) {
+                    if (a > b) return a;
+                    return b;
+                }
+        
+                // Optimized code
+                function max(a, b) {
+                    return a > b ? a : b;
+                }
+            </pre>
+        </div>
+    </div>
+    <div id="landscape">
+        <h1>Landscape or Portrait</h1>
+        <div class="border">
+            <pre>
+                function isLandscape(width, height) {
+                    if (width > height) return true;
+                    return false;
+                }
+                
+                function isLandscape(width, height) {
+                    return width > height ? true : false;
+                }
+                
+                // Optimized code
+                function isLandscape(width, height) {
+                    return width > height;
+                }            
+            </pre>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
